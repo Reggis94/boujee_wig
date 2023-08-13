@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Header</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+	<!-- Bootstrap Font Icon CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+<section class="header-main border-bottom bg-white">
+	<div class="container-fluid">
+       	<div class="row p-2 pt-3 pb-3 d-flex align-items-center">
+			<div class="col-md-2">
+				<img  class="d-none d-md-flex" src="https://i.imgur.com/R8QhGhk.png" width="100">
+			</div>
+			<div class="col-8">
+        		<div class="d-flex form-inputs">
+					<!-- <input class="form-control" type="text" placeholder="Search any product...">
+					<i class="bx bx-search"></i> -->
+					<h1>Boujee Wig</h1>
+				</div>
+           	</div>
+           
+           	<div class="col-2">
+				<div class="d-flex flex-column ">
+					<iconify-icon icon="grommet-icons:shop"></iconify-icon>
+					<span class="qty">1 Product</span>
+					<span class="fw-bold">$27.90</span>
+				</div>    
+			</div>
+		</div>
+	</div> 
+</section>
+
+<table class="table table-responsive cart table-striped">
+    <thead>
+      <tr>
+        <th class="product-remove"><span class="sr-only">Remove item</span></th>
+        <th class="product-thumbnail"><span class="sr-only">Thumbnail image</span></th>
+        <th class="product-name">Product</th>
+        <th class="product-price">Price</th>
+        <th class="product-quantity">Quantity</th>
+        <th class="product-subtotal">Subtotal</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="cart-item">
+            <td class="product-remove">
+            <a href="https://brielle.qodeinteractive.com/cart/?remove_item=26337353b7962f533d78c762373b3318&amp;_wpnonce=3f79804db0" class="remove" aria-label="Remove this item" data-product_id="470" data-product_sku="01">×</a>
+            </td>
+            <td class="product-thumbnail">
+            <a href="https://brielle.qodeinteractive.com/product/face-cream/"><img src="https://brielle.qodeinteractive.com/wp-content/uploads/2022/06/shop-single-img013.jpg" class="img-fluid" alt="jj" loading="lazy" /></a>
+            </td>
+            <td class="product-name" data-title="Product">
+            <a href="https://brielle.qodeinteractive.com/product/face-cream/">Face Cream</a>
+            </td>
+            <td class="product-price" data-title="Price">
+            <span class="price">$89.00</span>
+            </td>
+            <td class="product-quantity" data-title="Quantity">
+            <div class="quantity">
+                <label class="sr-only" for="quantity_64d830701ed87">Face Cream quantity</label>
+                <span class="quantity-minus">-</span>
+                <input type="text" id="quantity_64d830701ed87" class="form-control quantity-input" data-step="1" data-min="0" data-max="" name="cart[26337353b7962f533d78c762373b3318][qty]" value="1" title="Qty" size="4" placeholder="" inputmode="numeric" />
+                <span class="quantity-plus">+</span>
+            </div>
+            </td>
+            <td class="product-subtotal" data-title="Subtotal">
+            <span class="price">$89.00</span>
+            </td>
+        </tr>
+        <tr class="cart-item">
+            <td class="product-remove">
+            <a href="https://brielle.qodeinteractive.com/cart/?remove_item=26337353b7962f533d78c762373b3318&amp;_wpnonce=3f79804db0" class="remove" aria-label="Remove this item" data-product_id="470" data-product_sku="01">×</a>
+            </td>
+            <td class="product-thumbnail">
+            <a href="https://brielle.qodeinteractive.com/product/face-cream/"><img src="https://brielle.qodeinteractive.com/wp-content/uploads/2022/06/shop-single-img013.jpg" class="img-fluid" alt="jj" loading="lazy" /></a>
+            </td>
+            <td class="product-name" data-title="Product">
+            <a href="https://brielle.qodeinteractive.com/product/face-cream/">Face Cream</a>
+            </td>
+            <td class="product-price" data-title="Price">
+            <span class="price">$89.00</span>
+            </td>
+            <td class="product-quantity" data-title="Quantity">
+            <div class="quantity">
+                <label class="sr-only" for="quantity_64d830701ed87">Face Cream quantity</label>
+                <span class="quantity-minus">-</span>
+                <input type="text" id="quantity_64d830701ed87" class="form-control quantity-input" data-step="1" data-min="0" data-max="" name="cart[26337353b7962f533d78c762373b3318][qty]" value="1" title="Qty" size="4" placeholder="" inputmode="numeric" />
+                <span class="quantity-plus">+</span>
+            </div>
+            </td>
+            <td class="product-subtotal" data-title="Subtotal">
+            <span class="price">$89.00</span>
+            </td>
+        </tr>
+        <tr>
+        <td colspan="6" class="actions">
+          <div class="coupon">
+            <label for="coupon_code">Coupon:</label>
+            <input type="text" name="coupon_code" class="form-control" id="coupon_code" value="" placeholder="Coupon code" />
+            <button type="submit" class="btn btn-primary" name="apply_coupon" value="Apply coupon">Apply coupon</button>
+          </div>
+          <button type="submit" class="btn btn-primary" name="update_cart" value="Update cart" disabled="" aria-disabled="true">Update cart</button>
+          <input type="hidden" id="woocommerce-cart-nonce" name="woocommerce-cart-nonce" value="3f79804db0" />
+          <input type="hidden" name="_wp_http_referer" value="/cart/" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
