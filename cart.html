@@ -41,15 +41,64 @@
 	</div> 
 </section>
 
-<table class="table table-responsive cart table-striped">
+<h1>Your cart</h1>
+<div class="summary p-3">
+	<h2 class="title">Highlight Wig Wavy</h2>
+        <img src="image/peruviane-wavy-highlight-honey-brown.png" class="d-block w-100" alt="...">
+	<p class="price">170€</p>
+</div>
+<div class="row p-2">
+	<div class="col-5">
+		<div class="input-group">
+			<span class="input-group-btn">
+				<button type="button" class="quantity-left-minus btn btn-number"  data-type="minus" data-field="">
+				<i class="fas fa-minus"></i>
+				</button>
+			</span>
+			<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
+			<span class="input-group-btn">
+				<button type="button" class="quantity-right-plus btn btn-number" data-type="plus" data-field="">
+					<i class="fas fa-plus"></i>
+				</button>
+			</span>
+		</div>
+	</div>
+	<div class="col-7 p-1">
+		<button class="btn-block col-12">Delete from cart</button>
+	</div>
+
+	<table class="table">
+		<thead>
+			<th>Unit Price</th>
+			<th>Qty</th>
+			<th>Subtotal</th>
+		</thead>
+		<tr>
+			<td>170.00€</td>
+			<td>2</td>
+			<td>340.00€</td>
+		</tr>
+	</table>
+</div>
+
+<div>
+	<div>
+		<h3>Total</h3>
+		<p>340.00€</p>
+	</div>
+	<div>
+		<button>Go to checkout</button>
+	</div>
+</div>
+<!-- <table class="table table-responsive cart table-striped">
     <thead>
       <tr>
         <th class="product-remove"><span class="sr-only">Remove item</span></th>
-        <th class="product-thumbnail"><span class="sr-only">Thumbnail image</span></th>
+        <th class="product-thumbnail"><span class="sr-only d-sm-none">Thumbnail image</span></th>
         <th class="product-name">Product</th>
         <th class="product-price">Price</th>
         <th class="product-quantity">Quantity</th>
-        <th class="product-subtotal">Subtotal</th>
+        <th class="product-subtotal d-none d-sm-block">Subtotal</th>
       </tr>
     </thead>
     <tbody>
@@ -57,7 +106,7 @@
             <td class="product-remove">
             <a href="https://brielle.qodeinteractive.com/cart/?remove_item=26337353b7962f533d78c762373b3318&amp;_wpnonce=3f79804db0" class="remove" aria-label="Remove this item" data-product_id="470" data-product_sku="01">×</a>
             </td>
-            <td class="product-thumbnail">
+            <td class="product-thumbnail ">
             <a href="https://brielle.qodeinteractive.com/product/face-cream/"><img src="https://brielle.qodeinteractive.com/wp-content/uploads/2022/06/shop-single-img013.jpg" class="img-fluid" alt="jj" loading="lazy" /></a>
             </td>
             <td class="product-name" data-title="Product">
@@ -67,14 +116,14 @@
             <span class="price">$89.00</span>
             </td>
             <td class="product-quantity" data-title="Quantity">
-            <div class="quantity">
+            <div class="quantity col">
                 <label class="sr-only" for="quantity_64d830701ed87">Face Cream quantity</label>
                 <span class="quantity-minus">-</span>
                 <input type="text" id="quantity_64d830701ed87" class="form-control quantity-input" data-step="1" data-min="0" data-max="" name="cart[26337353b7962f533d78c762373b3318][qty]" value="1" title="Qty" size="4" placeholder="" inputmode="numeric" />
                 <span class="quantity-plus">+</span>
             </div>
             </td>
-            <td class="product-subtotal" data-title="Subtotal">
+            <td class="product-subtotal d-none d-sm-block" data-title="Subtotal">
             <span class="price">$89.00</span>
             </td>
         </tr>
@@ -82,7 +131,7 @@
             <td class="product-remove">
             <a href="https://brielle.qodeinteractive.com/cart/?remove_item=26337353b7962f533d78c762373b3318&amp;_wpnonce=3f79804db0" class="remove" aria-label="Remove this item" data-product_id="470" data-product_sku="01">×</a>
             </td>
-            <td class="product-thumbnail">
+            <td class="product-thumbnail d-none d-sm-none">
             <a href="https://brielle.qodeinteractive.com/product/face-cream/"><img src="https://brielle.qodeinteractive.com/wp-content/uploads/2022/06/shop-single-img013.jpg" class="img-fluid" alt="jj" loading="lazy" /></a>
             </td>
             <td class="product-name" data-title="Product">
@@ -92,14 +141,13 @@
             <span class="price">$89.00</span>
             </td>
             <td class="product-quantity" data-title="Quantity">
-            <div class="quantity">
-                <label class="sr-only" for="quantity_64d830701ed87">Face Cream quantity</label>
-                <span class="quantity-minus">-</span>
-                <input type="text" id="quantity_64d830701ed87" class="form-control quantity-input" data-step="1" data-min="0" data-max="" name="cart[26337353b7962f533d78c762373b3318][qty]" value="1" title="Qty" size="4" placeholder="" inputmode="numeric" />
-                <span class="quantity-plus">+</span>
-            </div>
+				<div class="quantity row">
+					<button class="col-4 btn-number">-</button>
+					<input class="col-4" type="number"/>
+					<button class="col-4 btn-number">+</button>
+				</div>
             </td>
-            <td class="product-subtotal" data-title="Subtotal">
+            <td class="product-subtotal d-none d-sm-block" data-title="Subtotal">
             <span class="price">$89.00</span>
             </td>
         </tr>
@@ -116,5 +164,67 @@
         </td>
       </tr>
     </tbody>
-  </table>
+  </table> -->
+
+  <style>
+
+	.btn-number{
+		color: white;
+		background-color: #663130;
+		border: 1px solid
+	}
+	/* Chrome, Safari, Edge, Opera */
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+	}
+
+	/* Firefox */
+	input[type=number] {
+	-moz-appearance: textfield;
+	}
+    a{
+        color: #663130;
+        text-decoration: none;
+        transition: color .2s ease-out;
+        cursor: pointer;
+    }
+    .table.cart{
+        font-family: Cormorant,serif;
+        font-weight: 400;
+        text-transform: initial;
+        color: #663130 !important;
+        font-size: 23px;
+        line-height: 1.304em;
+    }
+
+    th{
+      color: #663130 !important;
+      font-family: Cormorant,serif;
+      font-weight: 400;
+      text-transform: initial;
+      font-size: 23px;
+      line-height: 1.304em;
+    }
+
+    .product-remove{
+      font-size: 30px;
+      font-weight: 300;
+    }
+    
+    @media only screen and (max-width: 680px){
+		th{
+			font-size: 19px;
+		}
+
+		td{
+			font-size: 16px;
+		}
+
+		table{
+			font-size: 19px;
+		}
+    }
+  </style>
   
