@@ -16,10 +16,7 @@
 <section class="header-main border-bottom bg-white">
 	<div class="container-fluid">
        	<div class="row p-2 pt-3 pb-3 d-flex align-items-center">
-			<div class="col-md-2">
-				<img  class="d-none d-md-flex" src="https://i.imgur.com/R8QhGhk.png" width="100">
-			</div>
-			<div class="col-8">
+			<div class="col-10">
         		<div class="d-flex form-inputs">
 					<!-- <input class="form-control" type="text" placeholder="Search any product...">
 					<i class="bx bx-search"></i> -->
@@ -54,46 +51,71 @@
 	<div class="our-promise-subsection text-center">
 		<h1>Only hair that lasts long with real sizes and density. Only quality hair. Bad hair? No way.</h1>
 		<!-- <p>We will do anything to serve you the best quality hair with a professional service.</p> -->
-		<button class="button-scroll" href="#">Click here to see our products</button>
+		<a href="./product-list.html"><button class="button-scroll" >Click here to see our products</button></div></a>
 	</div>
 </div>
 
 <div class="container text-center type-hair">
-	<div class="row">
-		<div class="col">
-			<h1>Colored</h1>
-			<img src="image/colored.JPG" class="img-fluid"/>
-			<p>Choose the color that asserts your personality</p>
-			<button class="button-scroll">See our products</button>
-		</div>
-		<div class="col">
-			<h1>Straight</h1>
-			<img src="image/straight.JPG" class="img-fluid"/>
-			<p>Highest industry standard straight hair are with us</p>
-			<button class="button-scroll">See our products</button>
-		</div>
-		<div class="col">
-			<h1>Other?</h1>
-			<img src="image/wavy.JPG" class="img-fluid"/>
-			<p>Wavy? Curly? We let you decide.</p>
-			<button class="button-scroll">See our products</button>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col">
+            <h1>Colored</h1>
+        </div>
+        <div class="col">
+            <h1>Straight</h1>
+        </div>
+        <div class="col">
+            <h1>Other?</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="image/colored.JPG" class="img-fluid img-content">
+        </div>
+        <div class="col">
+            <img src="image/straight.JPG" class="img-fluid img-content">
+        </div>
+        <div class="col">
+            <img src="image/wavy.JPG" class="img-fluid img-content">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Choose the color that asserts your personality</p>
+        </div>
+        <div class="col">
+            <p>Highest industry standard straight hair are with us</p>
+        </div>
+        <div class="col">
+            <p>Wavy? Curly? We let you decide.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <a href="./product-list.html"><button class="button-scroll">See our products</button></a>
+        </div>
+        <div class="col">
+            <a href="./product-list.html"><button class="button-scroll">See our products</button></a>
+        </div>
+        <div class="col">
+            <a href="./product-list.html"><button class="button-scroll">See our products</button></a>
+        </div>
+    </div>
 </div>
+
 
 <div class="loyalty">
 	<h2>The best loyalty program that will make you buy without spending </h2>
 	<div class="row">
-		<div class="col-8 align-text-middle"><p class="align-text-middle">No need to buy 10 wigs before getting huge discounts. Anytime a new friend of yours buys a wig, you get 50 euros credit.</p></div>
-		<div class="col-4">
-			<img src="image/loyalty-card.png" style="height:180px;"  />
+		<div class="col-6 align-text-middle"><p class="align-text-middle">No need to buy 10 wigs before getting huge discounts. Anytime a new friend of yours buys a wig, you get 50 euros credit.</p></div>
+		<div class="col-6">
+			<img src="image/loyalty-card.png" style="height:180px;" class="img-fluid"/>
 		</div>
 	</div>
 </div>
 
-<div class="fast-shipping text-center">
-	<h1>Your hair at home in 1 hour! Yes. We are dead serious!</h1>
-	<img src="image/black-woman-package.png">
+<div class="fast-shipping text-center p-3">
+	<h1>Your hair at home in 1 hour! <br>Yes. <br>We are dead serious!</h1>
+	<img src="image/black-woman-package.png" class="img-fluid">
 	<p>You order and we ring at your door step in few hours</p>
 </div>
 
@@ -120,6 +142,10 @@
 		font-size: 1.2rem;
 	}
 
+	.our-promise{
+		margin-bottom: 30px;
+	}
+
 	.our-promise-subsection, .fast-shipping {
 		color: #663130;
 		font-family: Cormorant,serif;
@@ -129,6 +155,11 @@
 	.our-promise-subsection h1, .fast-shipping h1{
 		font-size: 48px;
 		font-weight: 400;
+	}
+
+	.our-promise button{
+		margin-top: 20px;
+		padding: 20px;
 	}
 
 	.button-scroll{
@@ -146,6 +177,7 @@
 	.type-hair{
 		font-style: italic;
 		color: #a27474;
+		margin-bottom: 20px;
 	}
 
 	.loyalty{
@@ -157,4 +189,36 @@
 	.loyalty h2{
 		font-weight: 700;
 	}
+
+	.img-content {
+		object-fit: cover; /* This ensures the image covers the entire container */
+	}
+
+
+	@media only screen and (min-width: 680px){
+		.title {
+			font-size: 50px;
+		}
+
+		.img-content {
+			height: 100%; 
+			/* Adjust this value to your desired image height */
+		}
+
+		.type-hair button{
+			padding: 20px;
+		}
+	}
+
+	@media only screen and (max-width: 680px){
+		.title {
+			font-size: 50px;
+		}
+
+		.img-content {
+			height: 250px; 
+			/* Adjust this value to your desired image height */
+		}
+	}
+
 </style>
