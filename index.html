@@ -55,7 +55,32 @@
 	</div>
 </div>
 
-<div class="container text-center type-hair">
+<div class="container text-center type-hair less-368px-show">
+
+	<div class="row">
+		<div class="col-12">
+			<h1>Colored</h1>
+			<img src="image/colored.JPG" class="img-fluid"/>
+			<p>Choose the color that asserts your personality</p>
+			<button class="button-scroll">See our products</button>
+		</div>
+		<div class="col-12">
+			<h1>Straight</h1>
+			<img src="image/straight.JPG" class="img-fluid"/>
+			<p>Highest industry standard straight hair are with us</p>
+			<button class="button-scroll">See our products</button>
+		</div>
+		<div class="col-12">
+			<h1>Other?</h1>
+			<img src="image/wavy.JPG" class="img-fluid"/>
+			<p>Wavy? Curly? We let you decide.</p>
+			<button class="button-scroll">See our products</button>
+		</div>
+	</div>
+</div>
+
+
+<div class="container text-center type-hair less-368px-hide">
     <div class="row">
         <div class="col">
             <h1>Colored</h1>
@@ -128,7 +153,7 @@
 </div>
 
 
-<div class="loyalty d-block d-sm-none">
+<div class="loyalty d-block d-md-none">
 	<h2>The best loyalty program that will make you buy without spending </h2>
 	<div class="row">
 		<div class="col-6 align-text-middle"><p class="align-text-middle">No need to buy 10 wigs before getting huge discounts. Anytime a new friend of yours buys a wig, you get 50 euros credit.</p></div>
@@ -138,7 +163,7 @@
 	</div>
 </div>
 
-<div class="fast-shipping text-center p-3 d-block d-sm-none">
+<div class="fast-shipping text-center p-3 d-block d-md-none">
 	<h1>Your hair at home in 1 hour! <br>Yes. <br>We are dead serious!</h1>
 	<img src="image/black-woman-package.png" class="img-fluid">
 	<p>You order and we ring at your door step in few hours</p>
@@ -239,6 +264,30 @@
 		}
 	}
 
+	@media only screen and (max-width: 369px){
+		.less-368px-show {
+			display: block;
+		}
+
+		.less-368px-hide {
+			display: none;
+		}
+
+		.type-hair button{
+			padding: 20px;
+		}
+	}
+
+	@media only screen and (min-width: 369px){
+		.less-368px-hide {
+			display: show;
+		}
+
+		.less-368px-show {
+			display: none;
+		}
+	}
+
 	@media only screen and (max-width: 680px){
 		.title {
 			font-size: 50px;
@@ -249,5 +298,8 @@
 			/* Adjust this value to your desired image height */
 		}
 	}
+
+
+	less-368px-show
 
 </style>
