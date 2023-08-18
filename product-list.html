@@ -41,74 +41,74 @@
     <div class="text-center">
         <h1>Our Products</h1>
     </div>
+    <div class="container d-none d-sm-block">
+        <div class="row">
+            <div class="product text-center col-4">
+                <img src="image/peruviane-wavy-highlight-honey-brown.png" class="container-fluid"/>
+            </div>
+            <div class="product text-center col-4">
+                <img src="image/peruviane-wavy-highlight-honey-brown.png" class="container-fluid"/>
+            </div>
+            <div class="product text-center col-4">
+                <img src="image/peruviane-wavy-highlight-honey-brown.png" class="container-fluid"/>
+            </div>
+        </div>
 
-    <div class="row">
-        <div class="product text-center col-4">
-            <img src="image/peruviane-wavy-highlight-honey-brown.png" class="container-fluid"/>
+        <div class="row">
+            <div class="product text-center col-4">
+                <div class="product-title">Highlight Wig Straight</div>
+            </div>
+            <div class="product text-center col-4">
+                <div class="product-title">Highlight Wig Straight</div>
+            </div>
+            <div class="product text-center col-4">
+                <div class="product-title">Highlight Wig Straight</div>
+            </div>
         </div>
-        <div class="product text-center col-4">
-            <img src="image/peruviane-wavy-highlight-honey-brown.png" class="container-fluid"/>
+
+        <div class="row">
+            <div class="product text-center col-4">
+                <div class="info">24 inches Human hair</div>
+            </div>
+            <div class="product text-center col-4">
+                <div class="info">24 inches Human hair</div>
+            </div>
+            <div class="product text-center col-4">
+                <div class="info">24 inches Human hair</div>
+            </div>
         </div>
-        <div class="product text-center col-4">
-            <img src="image/peruviane-wavy-highlight-honey-brown.png" class="container-fluid"/>
+
+        <div class="row">
+            <div class="product text-center col-4">
+                <div class="price">160€</div>
+            </div>
+            <div class="product text-center col-4">
+                <div class="price">160€</div>
+            </div>
+            <div class="product text-center col-4">
+                <div class="price">160€</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="product text-center col-4">
+                <a href="./product-list.html"><button class="button-scroll" >Add to cart</button></a>
+            </div>
+            <div class="product text-center col-4">
+                <a href="./product-list.html"><button class="button-scroll" >Add to cart</button></a>
+            </div>
+            <div class="product text-center col-4">
+                <a href="./product-list.html"><button class="button-scroll" >Add to cart</button></a>
+            </div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="product text-center col-4">
-            <div class="product-title">Highlight Wig Straight</div>
-        </div>
-        <div class="product text-center col-4">
-            <div class="product-title">Highlight Wig Straight</div>
-        </div>
-        <div class="product text-center col-4">
-            <div class="product-title">Highlight Wig Straight</div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="product text-center col-4">
-            <div class="info">24 inches Human hair</div>
-        </div>
-        <div class="product text-center col-4">
-            <div class="info">24 inches Human hair</div>
-        </div>
-        <div class="product text-center col-4">
-            <div class="info">24 inches Human hair</div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="product text-center col-4">
-            <div class="price">160€</div>
-        </div>
-        <div class="product text-center col-4">
-            <div class="price">160€</div>
-        </div>
-        <div class="product text-center col-4">
-            <div class="price">160€</div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="product text-center col-4">
-            <a href="./product-list.html"><button class="button-scroll" >Add to cart</button></a>
-        </div>
-        <div class="product text-center col-4">
-            <a href="./product-list.html"><button class="button-scroll" >Add to cart</button></a>
-        </div>
-        <div class="product text-center col-4">
-            <a href="./product-list.html"><button class="button-scroll" >Add to cart</button></a>
-        </div>
-    </div>
-
-
-    <div class="d-block d-sm-none">
+    <div class="product-list-mobile-container d-block d-sm-none m-3">
         <div class="product text-center">
             <img src="image/peruviane-wavy-highlight-honey-brown.png" class="container-fluid"/>
             <div class="product-title">Highlight Wig Straight</div>
             <div class="info">24 inches Human hair</div>
             <div class="price">160€</div>
+            <a href="./product-list.html"><button class="button-scroll" >Add to cart</button></a>
         </div>
     
         <div class="product text-center">
@@ -116,6 +116,7 @@
             <div class="product-title">Highlight Wig Wavy</div>
             <div class="info">24 inches Human hair</div>
             <div class="price">180€</div>
+            <a href="./product-list.html"><button class="button-scroll" >Add to cart</button></a>
         </div>
     
         <div class="product text-center">
@@ -123,6 +124,7 @@
             <div class="product-title">Ponytail</div>
             <div class="info">30 inches Synthetic</div>
             <div class="price">25€</div>
+            <a href="./product-list.html"><button class="button-scroll" >Add to cart</button></a>
         </div>
     </div>
 </body>
@@ -182,5 +184,9 @@ body{
 		letter-spacing: .2em;
 		text-transform: uppercase;
 	}
+
+    .product-list-mobile-container .product{
+        margin-bottom: 20px;
+    }
 
 </style>
