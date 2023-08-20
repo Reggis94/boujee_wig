@@ -42,37 +42,44 @@
 </section>
 
 <h1>Your cart</h1>
+<div class="table-responsive d-none d-sm-block">
+	<table class="table">
+		<thead>
+			<th></th>
+			<th></th>
+			<th>Unit Price</th>
+			<th>Qty</th>
+			<th>Subtotal</th>
+		</thead>
+		<tr class="align-middle">
+			<td>x</td>
+			<td><img class="img-cart-table" src="image/peruviane-wavy-highlight-honey-brown.png"></td>
+			<td>170.00€</td>
+			<td>
+				<span class="input-group-btn">
+					<button type="button" class="quantity-left-minus btn btn-number"  data-type="minus" data-field="">
+					<i class="fas fa-minus"></i>
+					</button>
+				</span>
+				<input type="text" id="quantity" name="quantity" class="input-number" value="1" min="1" max="100">
+				<span class="input-group-btn">
+					<button type="button" class="quantity-right-plus btn btn-number" data-type="plus" data-field="">
+						<i class="fas fa-plus"></i>
+					</button>
+				</span>
+			</td>
+			<td>340.00€</td>
+		</tr>
+	</table>
 
-<table class="table d-none d-sm-block">
-	<thead>
-		<th>Unit Price</th>
-		<th>Qty</th>
-		<th>Subtotal</th>
-	</thead>
-	<tr>
-		<td>170.00€</td>
-		<td><span class="input-group-btn">
-			<button type="button" class="quantity-left-minus btn btn-number"  data-type="minus" data-field="">
-			<i class="fas fa-minus"></i>
-			</button>
-		</span>
-		<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
-		<span class="input-group-btn">
-			<button type="button" class="quantity-right-plus btn btn-number" data-type="plus" data-field="">
-				<i class="fas fa-plus"></i>
-			</button>
-		</span></td>
-		<td>340.00€</td>
-	</tr>
-</table>
-
-<div id="checkout-button-container-back">
-	<div>
-		<h3>Total</h3>
-		<p>340.00€</p>
-	</div>
-	<div>
-		<button>Go to checkout</button>
+	<div id="checkout-button-container-back d-flex align-items-center">
+		<div>
+			<h3 class="text-center">Total: 340€</h3>
+			<!-- <p>340.00€</p> -->
+		</div>
+		<div class="text-center">
+			<button>Go to checkout</button>
+		</div>
 	</div>
 </div>
 
@@ -201,11 +208,23 @@
       font-size: 30px;
       font-weight: 300;
     }
+
+	.img-cart-table{
+		max-width: 175px;
+	}
     
 
     @media only screen and (min-width: 577px){
 		.input-number{
 			max-width: 50px;
+		}
+
+		tr{
+			font-size: 22px;
+		}
+
+		tr td{
+			color: #663130 !important;
 		}
     }
 
