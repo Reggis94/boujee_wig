@@ -50,7 +50,7 @@
                 <img src="image/peruviane-wavy-highlight-honey-brown.png" class="container-fluid"/>
             </div>
             <div class="product text-center col-4">
-                <img src="image/peruviane-wavy-highlight-honey-brown.png" class="container-fluid"/>
+                <img src="image/straight-thumbnail.png" class="container-fluid"/>
             </div>
         </div>
 
@@ -92,13 +92,13 @@
 
         <div class="row">
             <div class="product text-center col-4">
-                <a href="./product-list.html"><button class="button-scroll" >Add to cart</button></a>
+                <a href="#" onclick="sendSMS();"><button class="button-scroll">Add to cart</button></a>
             </div>
             <div class="product text-center col-4">
-                <a href="./product-list.html"><button class="button-scroll" >Add to cart</button></a>
+                <a href="#" onclick="sendSMS();"><button class="button-scroll">Add to cart</button></a>
             </div>
             <div class="product text-center col-4">
-                <a href="./product-list.html"><button class="button-scroll" >Add to cart</button></a>
+                <a href="#" onclick="sendSMS();"><button class="button-scroll">Add to cart</button></a>
             </div>
         </div>
     </div>
@@ -108,7 +108,7 @@
             <div class="product-title">Highlight Wig Straight</div>
             <div class="info">22 inches Human hair</div>
             <div class="price">170€</div>
-            <a href="./product-list.html"><button class="button-scroll" >Add to cart</button></a>
+            <a href="#" onclick="sendSMS();"><button class="button-scroll">Add to cart</button></a>
         </div>
     
         <div class="product text-center">
@@ -116,17 +116,30 @@
             <div class="product-title">Straight Ponytail</div>
             <div class="info">30 inches Synthetic hair</div>
             <div class="price">25€</div>
-            <a href="./product-list.html"><button class="button-scroll" >Add to cart</button></a>
+            <a href="#" onclick="sendSMS();"><button class="button-scroll">Add to cart</button></a>
         </div>
     
         <div class="product text-center">
-            <img src="image/peruviane-wavy-highlight-honey-brown.png" class="container-fluid"/>
+            <img src="image/straight-thumbnail.png" class="container-fluid"/>
             <div class="product-title">Ponytail</div>
             <div class="info">30 inches Synthetic</div>
             <div class="price">25€</div>
-            <a href="./product-list.html"><button class="button-scroll" >Add to cart</button></a>
+            <a href="#" onclick="sendSMS();"><button class="button-scroll">Add to cart</button></a>
         </div>
     </div>
+    
+
+    <script>
+        // Define the phone number and message
+        var phoneNumber = "1234567890";  // Replace with your desired phone number
+        var message = "Hello. I would like to order articles from your shop. Thank you.";
+        
+        // Function to open SMS app with predefined message
+        function sendSMS() {
+            window.location.href = "sms:" + phoneNumber + "?body=" + encodeURIComponent(message);
+        }
+    </script>
+
 </body>
 
 
