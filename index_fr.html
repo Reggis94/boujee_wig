@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>En-tête Bootstrap 5</title>
+    <title>Boujee Wig</title>
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
@@ -20,16 +20,16 @@
         		<div class="d-flex form-inputs">
 					<!-- <input class="form-control" type="text" placeholder="Rechercher un produit...">
 					<i class="bx bx-search"></i> -->
-					<h1>Perruque Boujee</h1>
+					<a href="index_fr.html" class="website-title"><h1>BOUJEE WIG</h1></a>
 				</div>
            	</div>
            
            	<div class="col-2">
-				<div class="d-flex flex-column ">
+				<!-- <div class="d-flex flex-column ">
 					<iconify-icon icon="grommet-icons:shop"></iconify-icon>
 					<span class="qty">1 Produit</span>
 					<span class="fw-bold">27,90 €</span>
-				</div>    
+				</div>     -->
 			</div>
 		</div>
 	</div> 
@@ -52,7 +52,7 @@
 		<h1>Longues durées, vraies tailles, vraies densités.<br> Qualité garanti. 
             <br>Des cheveux médiocres ?<br>Pas question.</h1>
 		<!-- <p>Nous ferons tout pour vous offrir des cheveux de la meilleure qualité avec un service professionnel.</p> -->
-		<a href="./liste-produits.html"><button class="button-scroll" >Cliquez ici pour voir nos produits</button></a>
+		<a href="./liste-produits.html"><button class="button-scroll m-3" >Cliquez ici pour voir nos produits</button></a>
 	</div>
 </div>
 
@@ -63,19 +63,19 @@
 			<h1>Colorés</h1>
 			<img src="image/colored.JPG" class="img-fluid"/>
 			<p>Choisissez la couleur qui affirme votre personnalité</p>
-			<button class="button-scroll">Voir nos produits</button>
+			<a href="./liste-produits.html"><button class="button-scroll">Voir nos produits</button></a>
 		</div>
 		<div class="col-12">
 			<h1>Lisses</h1>
 			<img src="image/straight.JPG" class="img-fluid"/>
 			<p>Les cheveux lisses aux normes de l'industrie les plus élevées sont avec nous</p>
-			<button class="button-scroll">Voir nos produits</button>
+			<a href="./liste-produits.html"><button class="button-scroll">Voir nos produits</button></a>
 		</div>
 		<div class="col-12">
 			<h1>Autres ?</h1>
 			<img src="image/wavy.JPG" class="img-fluid"/>
 			<p>Ondulés ? Bouclés ? C'est à vous de décider.</p>
-			<button class="button-scroll">Voir nos produits</button>
+			<a href="./liste-produits.html"><button class="button-scroll">Voir nos produits</button></a>
 		</div>
 	</div>
 </div>
@@ -131,9 +131,9 @@
 <div class="bottom-tier container d-none d-md-block">
 	<div class="row">
 		<div class="loyalty col-8">
-			<h2>Le meilleur programme de fidélité qui vous fera acheter sans dépenser </h2>
+			<h2>Votre programme parrainage et fidelité unique dans l'industrie</h2>
 			<div class="row">
-				<div class="align-text-middle"><p class="align-text-middle">Pas besoin d'acheter 10 perruques avant d'obtenir d'énormes réductions. Chaque fois qu'un de vos amis achète une perruque, vous obtenez un crédit de 50 euros.</p></div>
+				<div class="align-text-middle"><p class="align-text-middle">Vous ne trouverez pas un autre programme de fidelité et parrainage qui vous fera économiser comme nous</br><a href="programme-fidelite-parrainage.html">Voir le programme</a></p></div>
 				<div class="row">
 					<div class="col-6 text-center">
 						<img src="image/loyalty-card.png" style="height:250px; max-width: 100%;" class="img-fluid col-6"/>
@@ -154,10 +154,10 @@
 </div>
 
 
-<div class="loyalty d-block d-md-none">
-	<h2>Le meilleur programme de fidélité qui vous fera acheter sans dépenser </h2>
+<div class="loyalty d-block d-md-none p-2">
+	<h2>Votre programme parrainage et fidelité unique dans l'industrie</h2>
 	<div class="row">
-		<div class="col-6 align-text-middle"><p class="align-text-middle">Pas besoin d'acheter 10 perruques avant d'obtenir d'énormes réductions. Chaque fois qu'un de vos amis achète une perruque, vous obtenez un crédit de 50 euros.</p></div>
+		<div class="col-6 align-text-middle"><p class="align-text-middle">Vous ne trouverez pas un autre programme de fidelité et parrainage qui vous fera économiser comme nous<br><a href="programme-fidelite-parrainage.html"> Voir le programme</a></p></div>
 		<div class="col-6">
 			<img src="image/loyalty-card.png" style="height:180px;" class="img-fluid"/>
 		</div>
@@ -250,6 +250,10 @@
 		font-size: 30px !important;
 	}
 
+	.website-title{
+        text-decoration: none;
+        color: #663130;
+    }
 
 	@media only screen and (min-width: 680px){
 		.title {
